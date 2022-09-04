@@ -1,9 +1,12 @@
 package requests;
 
+import java.util.ArrayList;
+
 public class ServiceRequest {
 
     private String personalId;
     private String dateOfBirth;
+    ArrayList<ServiceRequest> serviceRequests = new ArrayList<>();
 
     public String getPersonalId() {
         return personalId;
@@ -20,5 +23,5 @@ public class ServiceRequest {
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-    
+
 }
