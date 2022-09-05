@@ -22,8 +22,13 @@ public class Service {
     }
 
     public void addService(Service service) {
-        services.add(service);
-    }
+        if (service.getPersonalId() != null && service.getDateOfBirth() != null) {
+            services.add(service);
+            System.out.println("Service is added");
+        } else {
+            System.out.println("Service is not added, please check if all entries are entered");
+        }
 
+    }
 
 }
